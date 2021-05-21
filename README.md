@@ -1,1 +1,1 @@
-<img src="../ToDo-List/img/todogif.gif">
+<img src="/ToDo-List/img/todogif.gif">
