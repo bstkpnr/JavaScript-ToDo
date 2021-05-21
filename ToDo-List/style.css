@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0c3f61, #888);
+  clip-path:(20% at right 80%);
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(#e8ecee, #888);
+  clip-path: circle(30% at left 0%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  z-index: 1;
+  left: 35%;
+  position: relative;
+}
+
+.card {
+  width: 90%;
+  padding: 20px;
+  margin: 50px 0px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  
+
+}
+.card-header {
+  align-items: center;
+  align-self: center;
+  padding: 10px 0px;
+  display: flex;
+  border-bottom: 3px solid #11b4ff;
+}
+.card-header i {
+  margin-left: auto;
+  cursor: pointer;
+}
+.card-body {
+  padding: 10px 0px;
+  height: 600px;
+  
+ 
+  
+}
+.todo-list {
+  list-style: none;
+}
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.todo-item li {
+  flex-grow: 1;
+  font-size: 14px;
+  cursor: default;
+}
+.todo-item i {
+  font-size: 17px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.card-footer {
+  padding: 10px 0px;
+  display: flex;
+}
+.card-footer input {
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+  padding: 5px 10px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px 0px 0px 5px;
+}
+.card-footer input:focus,
+.card-footer button:focus {
+  outline: 0;
+}
+.card-footer button {
+  background-color: crimson;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  width: 60px;
+  border-radius: 0px 5px 5px 0px;
+}
+.card-footer button:hover {
+  background-color: beige;
+}
+.todo {
+  display: flex;
+}
+.done {
+  background-color: rgba(0, 0, 0, 0.5);
+}
